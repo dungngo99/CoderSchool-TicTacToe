@@ -1,0 +1,23 @@
+.square{
+  border: 1px solid red;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+.dn-game{
+}
+
+.dn-history-areas{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dn-state-btn{
+  margin: 10px;
+}
