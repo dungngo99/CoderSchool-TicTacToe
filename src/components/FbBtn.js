@@ -13,7 +13,6 @@ export default class FbBtn extends Component {
         <FacebookLogin
           appId="730632477786035"
           autoLoad={true}
-          fieds='name, email, picture'
           callback={this.responseFacebook.bind(this.props.parent)}
           cssClass="my-facebook-button-class"
           icon="fa-facebook"
