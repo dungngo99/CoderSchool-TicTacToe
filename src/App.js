@@ -135,7 +135,7 @@ export default class App extends Component {
     let data = new URLSearchParams();
     data.append("player", this.state.userName);
     data.append("score", this.state.timeout);
-
+    
     const url = `https://ftw-highscores.herokuapp.com/tictactoe-dev`;
 
     await fetch(url, {
@@ -169,7 +169,7 @@ export default class App extends Component {
             <p>Welcome to TicTacToe, {this.state.userName}</p>
             <h4>{`Who has won? ${this.state.winner}`}</h4>
             <h4>{`Next player: ${this.playerChoices[this.state.cursor]}`}</h4>
-            <p>{`${this.state.timeout} - ${this.state.gameState}`}</p>
+            <p>{`${this.state.timeout}s - ${this.state.gameState}`}</p>
 
             <Board parent={this}></Board>
             <Button id={'start-btn'} onClick={() => this.start()}>Start</Button>
