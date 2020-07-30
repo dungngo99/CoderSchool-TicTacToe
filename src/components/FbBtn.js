@@ -11,7 +11,7 @@ export default class FbBtn extends Component {
     return (
       <div>
         <FacebookLogin
-          appId="730632477786035"
+          appId="1011513505948719"
           autoLoad={true}
           callback={this.responseFacebook.bind(this.props.parent)}
           cssClass="my-facebook-button-class"
