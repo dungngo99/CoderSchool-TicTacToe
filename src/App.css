@@ -1,14 +1,28 @@
 .square{
   border: 1px solid red;
-  width: 150px;
-  height: 150px;
+  width: 30px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
 }
 
-.dn-game{
+.main-section{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-image: url('https://cache.desktopnexus.com/thumbseg/554/554834-bigthumbnail.jpg')
+}
+
+.dn-history-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dn-history-areas{
@@ -16,8 +30,21 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  height: 50vh;
+  overflow: scroll;
+  border: 1px solid blue;
 }
 
 .dn-state-btn{
-  margin: 10px;
+  text-align: center;
+  margin: 5px;
+  height: 30px;
+}
+
+.dn-table{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
