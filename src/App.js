@@ -136,7 +136,7 @@ export default class App extends Component {
     data.append("player", this.state.userName);
     data.append("score", this.state.timeout);
 
-    const url = `http://ftw-highscores.herokuapp.com/tictactoe-dev`;
+    const url = `https://ftw-highscores.herokuapp.com/tictactoe-dev`;
 
     await fetch(url, {
       method: "POST",
@@ -149,7 +149,7 @@ export default class App extends Component {
   }
 
   async fetchAPI() {
-    const url = `http://ftw-highscores.herokuapp.com/tictactoe-dev`
+    const url = `https://ftw-highscores.herokuapp.com/tictactoe-dev`
     let response = await fetch(url, { limit: 20 })
     let data = await response.json()
     this.setState({ ...this.state, pplData: data })
