@@ -156,7 +156,7 @@ export default class App extends Component {
   }
 
   render() {
-    if (this.state.userName === '') return <FbBtn parent={this} />
+    // if (this.state.userName === '') return <FbBtn parent={this} />
 
     return (
       <div className='main-section'>
